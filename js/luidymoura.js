@@ -24,9 +24,14 @@ calcLuidyM.onclick = () => {
   if (valorLuidyM.value == "") {
     valorLuidyM.focus();
   }
-  
+
+  if(valorLuidyM.value < 0) {
+    resLuidyM.style= "text-align: center;"
+    return resLuidyM.value = "Indique um valor positivo!"
+  }
   //logica do luidymoura 
   if (valorLuidyM != "") {
+    resLuidyM.style= "text-align: start;"
     contagem = range(valorLuidyM.value)
     
     //Divisivel por 9 e 5
