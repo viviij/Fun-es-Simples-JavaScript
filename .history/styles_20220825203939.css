@@ -1,0 +1,16 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex: 2;
+  grid-column: 1fr;
+}
+
+.container section {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.container .questao_2,
+.questao_4 {}

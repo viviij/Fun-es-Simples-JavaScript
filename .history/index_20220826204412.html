@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <section class="tipos_de_Triângulo">
+      <section class="Tipos de Triângulo">
         <header>
           <h1>Tipos de triângulo</h1>
           <p>
@@ -33,7 +33,7 @@
           <input type="number" name="trianguloLado2" id="trianguloLado2"/>
           <input type="number" name="trianguloLado3" id="trianguloLado3"/>
 
-          <textarea type="text" name="tipoDeTriangulo" id="tipoDeTriangulo" style="resize: none" disabled></textarea>
+          <input type="text" name="tipoDeTriangulo" id="tipoDeTriangulo" disabled/>
 
           <button id="classificacaoTriangulo">Classificar</button>
           <button id="limparInputBotao">Limpar</button>
@@ -58,14 +58,14 @@
           <input type="number" name="bhaskaraValorB" id="bhaskaraValorB" placeholder="B"/>
           <input type="number" name="bhaskaraValorC" id="bhaskaraValorC" placeholder="C"/>
 
-          <textarea type="text" name="resultadoBhaskara" id="resultadoBhaskara" style="resize: none" disabled></textarea>
+          <input type="text" name="resultadoBhaskara" id="resultadoBhaskara" disabled/>
           <button id="calcularBhaskara">Calcular</button>
         </div>
       </section>
 
       <div class="linhaDeDivisaoDasQuestoes"></div>
 
-      <section class="sistema_De_Notas">
+      <section class="Sistema de Notas">
         <header>
           <h3>Sistema de notas</h3>
           <p>Construa um código JS que receba uma valor através de um input para um sistema de notas de uma instituição que possui a seguinte política de classificação: 
@@ -80,10 +80,11 @@
           No caso de a nota ser 38, o arredondamento é possível pois atingirá 40 e o aluno será aprovado.</p>
         </header>
         <div class="main">
-          <input type="number" name="notaRecebida" id="notaRecebida"  min="0" max="100" placeholder="Nota"/> 
+          <input type="number" name="notaRecebida" id="notaRecebida"  min="0" max="100" placeholder="Nota"/>
+
+          <input type="text" name="arredondamentoNota" id="arredondamentoNota" disabled/>
+
           <button id="calcularNota">Calcular nota</button>
-         
-          <textarea type="text" name="arredondamentoNota" id="arredondamentoNota" style="resize: none" disabled></textarea>
           <button id="limparNota">Limpar</button>
         </div>
       </section>
@@ -111,7 +112,7 @@
         <div class="main">
           <input type="number" name="valorLuidyMoura" id="valorLuidyMoura">
           <button id="calculoLuidyMoura">Resultado</button>
-          <textarea type="form" name="resultadoLuidyMoura" id="resultadoLuidyMoura" style="resize: none" disabled></textarea>
+          <textarea type="form" name="resultadoLuidyMoura" id="resultadoLuidyMoura" disabled></textarea>
         </div>
       </section>
     </div>

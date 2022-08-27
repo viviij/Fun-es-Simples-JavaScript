@@ -1,0 +1,39 @@
+const valorLuidyM = document.querySelector("#valorLuidyMoura")
+const resLuidyM = document.querySelector("#resultadoLuidyMoura") 
+const calcLuidyM = document.querySelector("#calculoLuidyMoura")
+function range(n) {//Função responsavel po ir do 0 até o valor x
+  const listaNumerica = []
+  for (i = 0; i < n; i++) {
+    listaNumerica.push(i+1)
+  }
+
+  return listaNumerica
+}
+
+function divisivelPor5e9(lista) {//função responsável por descobrir por qual é divisivel 
+  for (let contador in lista) {
+    //Divisivel apenas por 9 
+    if (lista[contador] % 9 == 0 ^ lista[contador] % 5 == 0) {
+      console.log("Luidy")   
+    }
+    
+    //divisivel apenas por 5
+    if (lista[contador] % 9 == 0 ^ lista[contador] % 5 == 0) {
+      console.log(lista[contador], "Moura")   
+    }
+    
+    //divisivel por 5 e 9
+    if (lista[contador] % 9 == 0 && lista[contador] % 5 == 0) {
+      console.log(lista[contador], "LuidyMoura")
+    }else {
+      console.log(lista[contador])
+    }
+  }
+}
+
+calcLuidyM.onclick = () => {
+  const lista = (range(valorLuidyM.value))
+  resLuidyM.value = lista
+}
+
+
